@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $name = 'Ugm';
+    $say  = '嗨！';
+    return view('welcome', compact('name', 'say'));
 });
 
 Auth::routes();
