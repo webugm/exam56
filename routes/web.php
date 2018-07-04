@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/exam/create', function () {
+    return view('exam.create');
+})->name('exam.create');
+
+
